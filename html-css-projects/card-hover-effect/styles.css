@@ -1,0 +1,34 @@
+section {
+    width: 500px;
+    margin: 200px auto 0 auto;
+}
+
+.card {
+    height: 260px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+
+    box-shadow: 2px 4px 8px black;
+    transition: 0.5s linear;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 20px goldenrod;
+}
+
+h3, p{
+    margin: 3px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.desc {
+    width: 140px;
+    margin: 0 auto;
+}
