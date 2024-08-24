@@ -1,0 +1,31 @@
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(238, 190, 84);
+    border-radius: 50%;
+    margin: 200px auto 0;
+}
+
+.eye {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.eye-item {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.mouth {
+    height: 60px;
+    width: 170px;
+    background-color: brown;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: 50px auto;
+}
