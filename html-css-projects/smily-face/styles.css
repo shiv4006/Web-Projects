@@ -25,7 +25,6 @@
     height: 60px;
     width: 170px;
     background-color: brown;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-radius: 0 0 50px 50px;
     margin: 50px auto;
 }
