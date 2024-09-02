@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="">
+        </div>
+        
+        <div class="search">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="What do you want to play?">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn-premium">
+                <a href="#">Explre Premium</a>
+            </button>
+    
+            <button class="btn-install">
+                <a href="#">Install App</a>
+            </button>
+    
+            <i class="fa-solid fa-bell"></i>
+    
+            <button class="btn-profile">
+                <a href="#">F</a>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="main">    
+        <div class="sidebar">
+            <!-- library section -->
+            <div class="library">
+                <div>
+                    <button class="btn-library">
+                        <span><i class="fa-solid fa-list"></i></span>
+                        Your Library
+                    </button>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+
+            <!-- cards of sidebar -->
+            <div class="sidebar-card">
+                <div class="card-text">
+                    <h4 class="title">Create your first playlist</h4>
+                    <p class="description">It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+            </div>
+            <div class="sidebar-card">
+                <div class="card-text">
+                    <h4 class="title">Let's find some podcasts to follow</h4>
+                    <p class="description">We'll keep you updated on new episodes</p>
+                    <button>Create playlist</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-content-nav">
+                <button>All</button>
+                <button>Music</button>
+                <button>podcasts</button>
+            </div>
+        
+            <div class="recently-played">Recently played</div>
+            <div class="recently-played-card">
+                <img src="./assets/card1img.jpeg" alt="">
+                <h3>Top 50 - Global</h3>
+                <p>Your daily update of the most playe...</p>
+            </div>
+
+            <div class="podcasts-heading">Spotify original & exclusive podcasts</div>
+            <div class="podcasts">
+                <div class="podcast-items">
+                    <img src="./assets/card2img.jpeg" alt="">
+                    <p>True Story Bro! wi</p>
+                    <p>Spotify</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card3img.jpeg" alt="">
+                    <p>Mere Paas Tum Ho</p>
+                    <p>Silent Ocean</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card4img.jpeg" alt="">
+                    <p>Alter Ego Naa...</p>
+                    <p>ThalaPathi</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card5img.jpeg" alt="">
+                    <p>Top 50 Songs G...</p>
+                    <p>Top 50</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card6img.jpeg" alt="">
+                    <p>Top 50 Songs I...</p>
+                    <p>Bollywood 50</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card2img.jpeg" alt="">
+                    <p>True Story Bro! wi</p>
+                    <p>Spotify</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card3img.jpeg" alt="">
+                    <p>Mere Paas Tum Ho</p>
+                    <p>Silent Ocean</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card4img.jpeg" alt="">
+                    <p>Alter Ego Naa...</p>
+                    <p>ThalaPathi</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card5img.jpeg" alt="">
+                    <p>Top 50 Songs G...</p>
+                    <p>Top 50</p>
+                </div>
+                <div class="podcast-items">
+                    <img src="./assets/card6img.jpeg" alt="">
+                    <p>Top 50 Songs I...</p>
+                    <p>Bollywood 50</p>
+                </div>
+            </div>
+
+            <div class="line-break">
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+        <div class="music-player">
+            <div class="left-section">
+                <div class="left-image">
+                    <img src="./assets/card2img.jpeg" alt="">
+                </div>
+                <div class="left-description">
+                    <p>Tauba Tauba (From "Bad News")</p>
+                    <p>Karan Aujla</p>
+                </div>
+            </div>
+
+            <div class="middle-section">
+                <div class="player-keys">
+                    <img src="./assets/player_icon1.png" alt="">
+                    <img src="./assets/player_icon2.png" alt="">
+                    <img class="musicbar" src="./assets/play_musicbar.png" alt="">
+                    <img src="./assets/player_icon4.png" alt="">
+                    <img src="./assets/player_icon5.png" alt="">
+                </div>
+
+                <div class="player-control">
+                    <input type="range" min="0" max="100" step="1">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-brands fa-speaker-deck"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

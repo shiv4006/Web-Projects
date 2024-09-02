@@ -1,0 +1,440 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*
+    All the things below for a certain height are for navigation which present at top side
+*/
+
+.nav {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search a {
+    font-size: 1.75rem;
+    color: #fff;
+    padding-right: 2rem;
+}
+
+.search-bar {
+    width: 25rem;
+    background-color: gray;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar i {
+    padding-left: 0.5rem;
+    font-size: 1.75rem;
+    opacity: .6;
+}
+
+.search-bar input {
+    width: 21rem;
+    font-size: 1.25rem;
+    background-color: gray;
+    border: none;
+    font-style: none;
+    font-weight: lighter;
+    padding: .25rem .2rem;
+    outline: none;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: .7;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    width: 25rem;
+}
+
+.btn-premium {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+.btn-premium a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.btn-install {
+    background-color: #000;
+    border: none;
+    padding: 0 1rem;
+}
+.btn-install a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-right i {
+    padding: .5rem 1.5rem 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.btn-profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: bisque;
+}
+.btn-profile a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/*
+    Main content starts from here
+*/
+.main {
+    height: 100vh;
+    display: flex;
+    margin-top: 2px;
+}
+
+/*
+    From here sidebar design started
+*/
+
+.sidebar {
+    width: 350px;
+    background-color: #121212;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.btn-library {
+    background-color: #121212;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    opacity: .7;
+    font-weight: bold;
+}
+.btn-library span {
+    margin-right: .5rem;
+}
+
+.library i {
+    font-size: 1.25rem;
+    opacity: .7;
+    padding: .25rem;
+}
+
+.sidebar-card {
+    margin: 1rem 1rem .25rem 1.5rem;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: .25rem;
+}
+
+.sidebar-card .card-text {
+    padding: 1rem .5rem;
+}
+
+.card-text .title {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: .5rem;
+}
+
+.card-text .description {
+    padding-bottom: .25rem;
+    margin: 0;
+    font-size: .85rem;
+}
+
+.sidebar-card button {
+    padding: .5rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: bold;
+    justify-content: center;
+    margin: 1rem 0 0 .25rem;
+}
+
+/*
+    From here main content design started
+*/
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.main-content-nav {
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+.main-content-nav button{
+    border-radius: 2rem;
+    padding: .4rem .7rem;
+    font-weight: 700;
+}
+
+.recently-played {
+    line-height: 2rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.recently-played-card {
+    margin: 2rem;
+    width: 10rem;
+    height: 13rem;
+    padding: .5rem;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(255, 255, 255, .015);
+    border-radius: 1rem;
+}
+.recently-played-card img {
+    width: 9rem;
+    height: 8rem;
+    margin-left: .45rem;
+    border-radius: .5rem;
+}
+
+.recently-played-card h3 {
+    margin: .2rem 0 .5rem .45rem;
+}
+.recently-played-card p {
+    margin: .2rem 0 0 .45rem;
+}
+.recently-played-card:hover {
+    box-shadow: 0px 0px 1px 1px blanchedalmond;
+}
+
+.podcasts-heading {
+    margin: 2rem 0 1.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.podcasts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.podcast-items {
+    margin: 0 0 1rem 1rem;
+    width: 10rem;
+    height: 12rem;
+    padding: .5rem;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .025);
+    border-radius: 1rem;
+}
+.podcast-items img {
+    width: 9rem;
+    height: 8rem;
+    border-radius: .5rem;
+    margin-left: .45rem;
+}
+.podcast-items img+p {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.podcast-items img+p+p {
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+.podcast-items:hover {
+    box-shadow: 0px 0px 2px 1px rebeccapurple;
+}
+
+.line-break {
+    display: flex;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 90%;
+    height: 40%;
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    opacity: .5;
+}
+
+/*
+    Last section which is about media control or media player
+*/
+
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    background-color: #000;
+}
+
+.left-section {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.left-image img{
+    padding: 0 1rem;
+    height: 60px;
+    width: 60px;
+}
+.left-description > p {
+    margin: .25rem;
+    padding: 0;
+    font-weight: 500;
+}
+.left-description > p + p {
+    margin: .25rem;
+    padding: 0;
+    font-size: .75rem;
+}
+
+.middle-section {
+    width: 50%;
+    padding-top: .5rem;
+}
+.player-keys {
+    display: flex;
+    justify-content: center;
+}
+.player-keys img {
+    width: 1rem;
+    height: 1rem;
+    padding: 0 1rem;
+    padding-top: .5rem;
+    opacity: .7;
+}
+.player-keys img:hover {
+    opacity: 1;
+}
+
+.player-keys .musicbar{
+    width: 1.75rem;
+    height: 1.75rem;
+    padding-top: .2rem;
+    opacity: 1;
+}
+.player-keys .musicbar:hover {
+    width: 2rem;
+    height: 2rem
+}
+
+.player-control {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+.player-control input {
+    width: 50%;
+    height: 4px;
+    accent-color: green;
+}
+
+.right-section {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+}
+.right-section i {
+    padding: 0 1.5rem 0 0;
+    font-size: 1rem;
+    opacity: .7;
+}
+.right-section i:hover {
+    opacity: 1;
+}
+
+
+/*
+    Media Queries
+*/
+@media (max-width: 400px) {
+    .main {
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .btn-premium {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .btn-install {
+        display: none;
+    }
+    .nav-right i {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .right-section {
+        display: none;
+    }
+    .left-section {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .middle-section {
+        display: none;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .main-content-nav {
+        display: none;
+    }
+}
