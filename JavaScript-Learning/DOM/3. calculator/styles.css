@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+.container h1 {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.main {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.display {
+    background-color: #fff;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.input {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.input h4 {
+    margin-right: .25rem;
+    font-size: 1.25rem;
+}
+
+.output {
+    background-color: aliceblue;
+    width: 100%;
+    height: 35%;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.output h2 {
+    padding-right: .5rem;
+}
+
+.main .row {
+    padding: .25rem;
+    display: flex;
+}
+
+.row i {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 .25rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.094);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    opacity: .8;
+    cursor: pointer;
+}
+.row .bracket {
+    font-size: 1.75rem;
+}
+
+.row .all-clear {
+    background-color: rgba(234, 100, 155, .6);
+    font-size: 1.25rem;
+}
+
+.row .calculate {
+    background-color: rgba(8, 146, 205, 0.893);
+}
+
+.row .bracket, .row .mod, .row .divide, .row .multiply, .row .minus, .row .plus {
+    background-color: rgba(109, 171, 205, 0.5);
+}
