@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box button {
+    font-size: 4rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.result {
+    margin: 2rem;
+}
+
+.result span {
+    font-size: 2rem;
+    margin: 0 1rem;;
+}
+
+.moves {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.value {
+    font-size: 1.25rem;
+}
