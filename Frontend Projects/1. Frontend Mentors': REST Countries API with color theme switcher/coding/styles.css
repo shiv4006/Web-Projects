@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --darkmode-element: hsl(209, 23%, 22%);
+    --darkmode-background: hsl(207, 26%, 17%);
+    --lightmode-text: hsl(200, 15%, 8%);
+    --lightmode-input: hsl(0, 0%, 52%);
+    --lightmode-backgound: hsl(0, 0%, 98%);
+    --darkmode-text-lightmode-element: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--lightmode-backgound);
+}
+body.dark {
+    background-color: var(--darkmode-background);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Upper navbar design */
+.navbar {
+    line-height: 5rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 4rem;
+}
+.navbar h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.navbar p {
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar p i {
+    margin-right: .75rem;
+    transform: rotate(-30deg);
+    font-size: 1.3rem;
+}
+.dark-nav {
+    background-color: var(--darkmode-element);
+}
+
+/* Seach and filter design */
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.search {
+    background-color: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+    padding-left: 1rem;
+    border-radius: .5rem;
+    padding-right: .25rem
+}
+.search i {
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.25rem;
+    padding-right: .5rem;
+}
+.search input {
+    border: none;
+    outline: none;
+    padding: .75rem 0;
+    font-size: 1.25rem;
+    background-color: inherit;
+}
+
+.filter-container{
+    background-color: #fff;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    padding: .15rem .75rem;
+}
+
+#filter {
+    padding-block: .75rem;
+    border: none;
+    outline: none;
+    padding-right: 2.25rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    background-color: inherit;
+    color: inherit;
+}
+/* Card container -> holding all cards together */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    margin-block: 2rem;
+    padding-inline: 2rem;
+}
+
+/* Card design */
+.card {
+    background-color: #fff;
+    max-width: 18rem;
+    width: fit-content;
+    min-width: 18rem;
+    max-height: 363.200px;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    margin: 2rem .5rem;
+    text-decoration: none;
+    color: #000;
+}
+.dark-card, .dark-search, .dark-filter {
+    background-color: hsl(209, 23%, 22%);
+}
+
+
+.card img {
+    width: 18rem;
+    height: 11rem;
+    overflow: hidden;
+}
+.card .card-details {
+    padding-inline: 1.25rem;
+    padding-bottom: 2.5rem;
+    overflow: hidden;
+}
+.card-details h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-block: 1rem;
+}
+.card-details p {
+    margin-block: .25rem;
+    font-weight: 500;
+}
+.card-details-dard, .search-input-dark input, .search-input-dark i {
+    color: var(--darkmode-text-lightmode-element);
+}
+
+/* @media (max-width: 900px) {
+    .search-filter {
+        flex-direction: column;
+    }
+    .search {
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .filter-container {
+
+    }
+} */
+
+@media (max-width: 700px) {
+    .navbar {
+        padding-inline: 2rem;
+    }
+    .navbar h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+    .navbar p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .navbar p i {
+        font-size: 1.15rem;
+    }
+
+    .search-filter {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .search {
+        width: 80%;
+    }
+}
+
+@media (max-width: 525px) {
+    .search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 455px) {
+    .navbar {
+        line-height: 2.5;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+    }
+    .navbar h3 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .navbar p {
+        font-size: .75rem;
+        font-weight: 700;
+    }
+    .navbar p i {
+        margin-right: .5rem;
+        font-size: 1rem;
+    }
+
+    .search {
+        width: 130%;
+    }
+
+    .card {
+        margin: 1rem .5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .search {
+        width: 175%;
+    }
+    .search input {
+        font-size: 1rem;
+    }
+    .search i {
+        font-size: 1rem;
+    }
+
+    #filter {
+        padding-block: .25rem;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .search{ 
+        width: 200%;
+    }
+}
