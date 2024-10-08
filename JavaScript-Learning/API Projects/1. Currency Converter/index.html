@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Currency <i class="fa-solid fa-dollar-sign"></i> Converter</h3>
+        </div>
+        <form action="">
+            <input type="number" class="amount" placeholder="enter amount"> <!-- input field -->
+
+            <div class="dropboxes"> <!-- for flag and select country dropdowns -->
+                <div>
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <select name="from" id="from"></select>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div>
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                    <select name="to" id="to"></select>
+                </div>
+            </div>
+
+            <div class="output-text"> <!-- output field -->
+                <!-- <p><b>1</b> USD = <b>87.43</b> INR</p> -->
+            </div>
+
+            <button class="btn">Get exchange value</button> <!-- button for currency converting -->
+        </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

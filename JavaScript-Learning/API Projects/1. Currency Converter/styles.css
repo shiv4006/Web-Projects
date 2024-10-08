@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25vw;
+}
+
+body {
+    background-color: #EDE8DC;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 20rem;
+    min-height: 25rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px #A5B68D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.container h3 i {
+    color: #5f7442;
+}
+
+form {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, button, select {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+form > input {
+    border: 2px solid #5f7442;
+    height: 2.5rem;
+    border-radius: 1rem;
+    padding-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.dropboxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1.5rem;
+}
+
+.dropboxes div, img {
+    width: 5rem;
+}
+
+.dropboxes .to, .from {
+    display: flex;
+    flex-direction: column;
+    width: 3.5rem;
+}
+
+.dropboxes i {
+    font-size: 2rem;
+    transform: translateY(-.75rem);
+}
+
+.dropboxes select {
+    border: 1.5px solid #5f7442;
+    border-radius: .25rem;
+    font-weight: 600;
+}
+
+.output-text {
+    font-size: 1.15rem;
+    margin: 1rem;
+}
+
+.btn {
+    width: 80%;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: #E7CCCC;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: .25rem;
+    margin-top: 1rem;
+}
